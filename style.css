@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: beige;
+  /* background-image: url(img/forest.jpg) ; */
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+  background-color: #1d212f;
+  border-radius: 0 0 25px 25px;
+  padding: 20px;
+}
+
+.top-top {
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  /* min-height: 300px;
+  background-color: #1d212f;
+  border-radius: 0 0 25px 25px; */
+}
+.logo {
+  margin-left: 10px;
+  font-family: "Tangerine";
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+}
+.nav-item {
+  background-color: #1d212f;
+  font-family: "Urbanist";
+  color: #ffffff;
+  /* padding: 0px 10px; */
+}
+.nav-en {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+.nav-en img {
+  height: 25px;
+  border-radius: 25px;
+
+  /* padding: 10px 20px 10px 20px; */
+}
+
+/* .btn {
+  border-radius: 20px;
+  border: 5px #ffffff;
+} */
+
+.nav-item:link {
+  text-decoration: none;
+}
+.nav-item:visited {
+  text-decoration: none;
+}
+.nav-item:hover {
+  text-decoration: chocolate;
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 70px;
+}
+
+.story-t {
+  max-width: 300px;
+  font-family: "Urbanist";
+  color: #ffffff;
+  margin-left: 3rem;
+}
+.story-p {
+  max-width: 400px;
+  font-family: "Urbanist";
+  color: #ffffff;
+  margin-right: 3rem;
+}
+.wall-front {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  top: -4rem;
+  width: 85%;
+  border-radius: 25px;
+}
+
+/* 
+.despre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 70px;
+}
+.despre-t {
+  font-family: "Urbanist";
+}
+.despre-p {
+  font-family: "Urbanist";
+  margin: 0 100px 0 100px;
+} */
+
+#fac {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Urbanist";
+  display: flex;
+}
+
+.fac-text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 30rem;
+}
+
+.fac-text h2 {
+  text-align: center;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined {
+  color: coral;
+  /* width: 3rem; */
+}
+
+li {
+  font-size: 1.3rem;
+  list-style-type: none;
+  font-family: "Urbanist";
+  margin: 1rem;
+  /* height: 3rem; */
+  text-align: center;
+}
+
+/* FACILITATI */
+
+.fac-img {
+  display: flex;
+  width: 55%;
+  overflow: hidden;
+}
+.pic1 {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  position: relative;
+  top: 4rem;
+  left: 6rem;
+  width: 20rem;
+  height: 20rem;
+  z-index: 3;
+}
+.pic2 {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  position: relative;
+  top: 15rem;
+  left: -4rem;
+  width: 20rem;
+  height: 15rem;
+  z-index: 2;
+}
+.pic3 {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  position: relative;
+  top: 2rem;
+  left: -21rem;
+  width: 20rem;
+  height: 20rem;
+  z-index: 1;
+}
+
+/* CONTACT */
+
+/* Style inputs */
+
+/* Style the container/contact section */
+.contact-t {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: beige;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row {
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two columns that float next to eachother */
+.column1 {
+  /* float: left; */
+  /* width: 100%; */
+  margin-top: 6px;
+}
+
+.column2 {
+  font-family: "Urbanist";
+  float: left;
+  /* width: 100%; */
+  margin-top: 6px;
+  padding: 20px;
+}
+.column2 img {
+  max-width: 50px;
+}
+
+.map {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* GALLERY GALLERY GALLERY GALLERY GALLERY*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+  position: relative;
+  /* margin: 20px 0; */
+}
+/* Hide the images by default */
+.mySlides {
+  margin: 100px;
+  /* margin: 0 110px; */
+  display: none;
+}
+.mySlides img {
+  border-radius: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #f5f5dc;
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  /* height: 500px; */
+  padding: 16px;
+  margin-top: -50px;
+  margin: 100px;
+  color: #f06d09;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 15px 15px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f06d09;
+  font-family: "Urbanist";
+  font-size: bold 18px;
+  padding: 30px 20px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image text */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+} */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side (thumbnails) */
+.column {
+  padding: 10px;
+  float: left;
+  width: 120px;
+  height: 80px;
+  overflow: auto;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+button {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(254, 254, 254);
+  border-radius: 20px;
+  background-color: transparent;
+  /* display: flex; */
+  right: 0;
+  width: 60px;
+  height: 50px;
+  margin-left: 10px;
+  padding: 1px;
+}
+
+/* MEDIA LAYOUT - when the screen is less than 1000px wide */
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+  }
+  .top-top,
+  .menu,
+  .story {
+    flex-direction: column;
+  }
+
+  .menu,
+  .logo {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .story {
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: 30px;
+  }
+
+  .story-p {
+    margin: 1rem;
+    text-align: justify;
+  }
+  .story-t {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  #fac {
+    flex-direction: column;
+  }
+  .fac-img {
+    min-height: 30rem;
+    width: auto;
+  }
+  .pic1 {
+    left: 1rem;
+  }
+  .pic2 {
+    left: -5rem;
+  }
+  .pic3 {
+    left: -23rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .column1 {
+    display: flex;
+  }
+
+  .contact-t {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .logo-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mySlides {
+    margin: 20px;
+  }
+  .prev,
+  .next {
+    margin: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .nav ul {
+    display: none;
+  }
+  /* mobile */
+  /* WHAT NOW? */
+}
+
+@media only screen and (min-width: 1001px) {
+  .btn {
+    display: none;
+    /* !important */
+  }
+  .nav > ul {
+    display: flex;
+  }
+}
+
+/* END MEDIA */
