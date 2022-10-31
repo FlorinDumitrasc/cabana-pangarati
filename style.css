@@ -215,7 +215,7 @@ li {
   font-family: "Urbanist";
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   background-color: #1d212f;
   color: #cfc8c4;
   padding: 10px;
