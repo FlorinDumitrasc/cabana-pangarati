@@ -7,7 +7,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: beige;
+  background-color: rgb(101, 131, 57);
   /* background-image: url(img/forest.jpg) ; */
 }
 
@@ -208,13 +208,16 @@ li {
 .contact-t {
   text-align: left;
   margin-left: 100px;
+  font-family: "Urbanist";
 }
 
 .container {
+  font-family: "Urbanist";
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
-  background-color: beige;
+  border-radius: 25px;
+  background-color: #1d212f;
+  color: #cfc8c4;
   padding: 10px;
 }
 
@@ -233,16 +236,19 @@ li {
 
 /* Create two columns that float next to eachother */
 .column1 {
-  /* float: left; */
+  /* float: right; */
   /* width: 100%; */
-  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 40px; */
+  margin-top: 10px;
 }
 
 .column2 {
-  font-family: "Urbanist";
   float: left;
   /* width: 100%; */
-  margin-top: 6px;
+  margin-top: 10px;
   padding: 20px;
 }
 .column2 img {
@@ -250,10 +256,14 @@ li {
 }
 
 .map {
-  display: block;
-  margin: auto;
-  width: 100%;
+  background-color: #53c053;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 95%;
   max-width: 200px;
+  border-radius: 45px;
 }
 
 /* GALLERY GALLERY GALLERY GALLERY GALLERY*/
@@ -347,18 +357,20 @@ li {
 
 button {
   display: flex;
-  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
   text-align: center;
   color: rgb(255, 255, 255);
   border: 3px solid rgb(254, 254, 254);
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: transparent;
   /* display: flex; */
   right: 0;
-  width: 60px;
+  width: 55px;
   height: 50px;
   margin-left: 10px;
-  padding: 1px;
+  /* padding: 1px; */
 }
 
 /* MEDIA LAYOUT - when the screen is less than 1000px wide */
@@ -417,7 +429,17 @@ button {
   }
 
   .column1 {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .map {
+    background-color: #53c053;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 45px;
+    margin: 20px;
+    max-width: 100px;
   }
 
   .contact-t {
