@@ -7,11 +7,18 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(101, 131, 57);
-  /* background-image: url(img/forest.jpg) ; */
+  /* background: rgb(55, 147, 61); */
+  color: #f5f5dc;
+  /* background-color: #f4d03f; */
+  background-image: linear-gradient(172deg, #159957 0%, #102d4a 100%);
+
+  /* background-color: rgb(176, 180, 241); */
+
+  /* background-image: url(img/forest.jpg); */
 }
 
 .top {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,6 +43,7 @@ body {
   font-family: "Tangerine";
   font-size: 3.5rem;
   color: #ffffff;
+  text-align: center;
 }
 
 .menu {
@@ -49,6 +57,11 @@ body {
   color: #ffffff;
   /* padding: 0px 10px; */
 }
+
+.nav-item:hover {
+  color: #f06d09;
+}
+
 .nav-en {
   display: flex;
   justify-content: center;
@@ -60,11 +73,6 @@ body {
 
   /* padding: 10px 20px 10px 20px; */
 }
-
-/* .btn {
-  border-radius: 20px;
-  border: 5px #ffffff;
-} */
 
 .nav-item:link {
   text-decoration: none;
@@ -95,13 +103,15 @@ body {
   color: #ffffff;
   margin-right: 3rem;
 }
+
 .wall-front {
   display: block;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   top: -4rem;
-  width: 85%;
+  width: 75%;
+  background-size: contain;
   border-radius: 25px;
 }
 
@@ -135,7 +145,8 @@ body {
 }
 
 .fac-text h2 {
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 10px;
 }
 
 .pair {
@@ -212,12 +223,14 @@ li {
 }
 
 .container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Urbanist";
   display: flex;
   flex-direction: column;
   border-radius: 25px 25px 0 0;
   background-color: #1d212f;
-  color: #cfc8c4;
+  color: #fff;
+  /* border: 5px solid #3b8f3b; */
   padding: 10px;
 }
 
@@ -358,24 +371,22 @@ li {
 button {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
   text-align: center;
-  font-size: 25px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  border: 3px solid rgb(254, 254, 254);
+  color: #1db978;
+  border: 2px solid #1db978;
   border-radius: 10px;
   background-color: transparent;
-  /* display: flex; */
-  right: 0;
-  width: 55px;
+  width: 50px;
   height: 50px;
   margin-left: 10px;
-  /* padding: 1px; */
 }
 
-/* MEDIA LAYOUT - when the screen is less than 1000px wide */
+/* MEDIA LAYOUT - screen is less than 900px wide */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
     margin-top: 0;
@@ -391,6 +402,9 @@ button {
   .logo {
     padding: 0;
     margin-left: 0;
+  }
+  .logo {
+    font-size: 3.4rem;
   }
 
   .story {
@@ -410,6 +424,9 @@ button {
 
   #fac {
     flex-direction: column;
+  }
+  .fac-text h2 {
+    text-align: center;
   }
   .fac-img {
     min-height: 30rem;
@@ -471,7 +488,7 @@ button {
   /* WHAT NOW? */
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 901px) {
   .btn {
     display: none;
     /* !important */
