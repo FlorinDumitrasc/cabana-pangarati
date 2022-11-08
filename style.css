@@ -102,6 +102,7 @@ body {
   font-family: "Urbanist";
   color: #ffffff;
   margin-right: 3rem;
+  margin-left: 1rem;
 }
 
 .wall-front {
@@ -268,6 +269,9 @@ li {
   color: #f06d09;
   text-decoration: none;
 }
+.column2 a:hover {
+  color: #d32919;
+}
 .column2 img {
   max-width: 50px;
 }
@@ -388,6 +392,37 @@ button {
   margin-left: 10px;
 }
 
+.book {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+  border: 2px solid #077a40;
+  border-radius: 20px;
+  font-family: "Urbanist";
+  color: #ffffff;
+  text-align: center;
+  width: auto;
+  max-width: max-content;
+  padding: 9px;
+  margin: 0 50px 100px 200px;
+  cursor: pointer;
+}
+.book:hover {
+  background-color: #077a40;
+  border: 2px solid #1d212f;
+  color: #f76d2c;
+}
+.book::after {
+  background-color: #1d212f;
+  border: 2px solid#1d212f;
+  color: #fff;
+}
+.form {
+  display: none;
+  padding: 30px 0;
+}
+
 /* MEDIA LAYOUT - screen is less than 900px wide */
 
 @media screen and (max-width: 900px) {
@@ -490,7 +525,12 @@ button {
     display: none;
   }
   /* mobile */
-  /* WHAT NOW? */
+  .book {
+    display: flex;
+
+    flex-shrink: 1;
+    margin: 0 0 80px 0;
+  }
 }
 
 @media only screen and (min-width: 901px) {

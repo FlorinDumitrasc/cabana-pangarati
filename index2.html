@@ -54,13 +54,13 @@
           <ul class="menu">
             <li><a href="index2.html" class="nav-item">Home</a></li>
             <li><a href="#gallery" class="nav-item">Gallery</a></li>
-            <li><a href="about2.html" class="nav-item">About us</a></li>
+            <li><a href="about2.html" class="nav-item">Story and Prices</a></li>
             <li><a href="#contact" class="nav-item">Contact</a></li>
-            <li>
+            <!-- <li>
               <a href="/hotelreservationform/hotel.php" class="nav-item"
                 >Book a reservation</a
               >
-            </li>
+            </li> -->
             <li>
               <a href="index.html" class="nav-en"
                 ><img src="img/lang2.png" alt=""
@@ -75,10 +75,19 @@
           The A-frame cabin has a capacity of 4 people, having 40 sq. meters,
           with an extensible bed and a matrimonial bed in the attic. A fully
           equipped bathroom and a fireplace. The kitchen is a separate building,
-          completely equipped, with barbecue, stove and oven. It has 40 sq.
+          completely equipped, with indoor grill, stove and oven. It has 40 sq.
           meters and a glass wall with panoramic view.
         </p>
       </div>
+      <!-- RESERVATION FORM -->
+      <h1 class="book">Book a reservation</h1>
+      <div class="form">
+        <script
+          type="text/javascript"
+          src="https://form.jotform.com/jsform/223111789152352"
+        ></script>
+      </div>
+      <!-- End RESERVATION FORM -->
     </header>
 
     <div>
@@ -307,6 +316,11 @@
     <script>
       $("button").click(function () {
         $(".menu").toggle(600);
+      });
+    </script>
+    <script>
+      $(".book").click(function () {
+        $(".form").toggle(600);
       });
     </script>
   </body>

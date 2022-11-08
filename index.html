@@ -56,11 +56,11 @@
             <li><a href="#gallery" class="nav-item">Galerie</a></li>
             <li><a href="about.html" class="nav-item">Despre noi</a></li>
             <li><a href="#contact" class="nav-item">Contact</a></li>
-            <li>
+            <!-- <li>
               <a href="/hotelreservationform/hotel.php" class="nav-item"
                 >Rezervă</a
               >
-            </li>
+            </li> -->
             <li>
               <a href="index2.html" class="nav-en"
                 ><img src="img/lang.png" alt=""
@@ -79,6 +79,16 @@
           perete de sticlă cu priveliște panoramică.
         </p>
       </div>
+
+      <!-- RESERVATION FORM -->
+      <h1 class="book">Rezervă</h1>
+      <div class="form">
+        <script
+          type="text/javascript"
+          src="https://form.jotform.com/jsform/223111789152352"
+        ></script>
+      </div>
+      <!-- End RESERVATION FORM -->
     </header>
 
     <div>
@@ -309,6 +319,11 @@
     <script>
       $("button").click(function () {
         $(".menu").toggle(600);
+      });
+    </script>
+    <script>
+      $(".book").click(function () {
+        $(".form").toggle(600);
       });
     </script>
   </body>
