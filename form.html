@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Urbanist|Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="leaves.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Open View Place</title>
+  </head>
+  <body>
+    <div id="leaves">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <header class="top">
+      <div class="top-top">
+        <!-- NEW DIV logo-mobile-->
+        <div class="logo-mobile">
+          <div class="logo">Open View Place</div>
+          <!-- Hamburger icon -->
+          <button class="btn">&#9776;</button>
+          <!-- END Hamburger icon -->
+        </div>
+        <!-- END NEW DIV -->
+        <div class="nav">
+          <ul class="menu">
+            <li><a href="index.html" class="nav-item">Acasă</a></li>
+            <li><a href="index.html#gallery" class="nav-item">Galerie</a></li>
+            <li><a href="about.html" class="nav-item">Despre noi</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+            <!-- <li>
+              <a href="/hotelreservationform/hotel.php" class="nav-item"
+                >Rezervă</a
+              >
+            </li> -->
+            <!-- <li>
+              <a href="about2.html" class="nav-en"
+                ><img src="img/lang.png" alt=""
+              /></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- RESERVATION FORM -->
+      <div class="form">
+        <script
+          type="text/javascript"
+          src="https://form.jotform.com/jsform/223111789152352"
+        ></script>
+      </div>
+      <!-- End RESERVATION FORM -->
+    </header>
+    <div>
+      <img src="img/PXL_20220824_crop.jpg" alt="picture" class="wall-front" />
+    </div>
+    <div class="container" id="contact">
+      <div class="contact-t">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <a
+            href="http://maps.google.com?q=46.9348928,26.2286993"
+            target="_blank"
+          >
+            <img src="img/map.jpg" class="map" alt=""
+          /></a>
+        </div>
+        <div class="column2">
+          <p>Adresa: Str. Salcâmilor, nr. 23 - Sat Pângărăcior, Jud. Neamț</p>
+          <p>
+            E-mail:
+            <a href="mailto:openviewplace@yahoo.com">openviewplace@yahoo.com</a>
+          </p>
+          <p>Telefon: <a href="tel:00447447927599">+44 744 792 7599</a></p>
+          <p>
+            Whatsapp:
+            <a href="https://wa.me/00447447927599?text=Hello"
+              >+44 744 792 7599</a
+            >
+          </p>
+          <a href="https://www.instagram.com/openviewplace/" target="_blank"
+            ><img src="img/insta.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("button").click(function () {
+        $(".menu").toggle(600);
+      });
+    </script>
+  </body>
+</html>

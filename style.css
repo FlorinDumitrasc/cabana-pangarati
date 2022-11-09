@@ -110,7 +110,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
-  top: -4rem;
+  top: -6rem;
   width: 75%;
   background-size: contain;
   border-radius: 25px;
@@ -392,7 +392,7 @@ button {
   margin-left: 10px;
 }
 
-.book {
+.book a {
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
@@ -407,19 +407,21 @@ button {
   padding: 9px;
   margin: 0 50px 100px 200px;
   cursor: pointer;
+  text-decoration: none;
 }
-.book:hover {
+.book a:hover {
   background-color: #077a40;
   border: 2px solid #1d212f;
   color: #f76d2c;
 }
-.book::after {
+
+.book a::after {
   background-color: #1d212f;
   border: 2px solid#1d212f;
   color: #fff;
 }
 .form {
-  display: none;
+  /* display: none; */
   padding: 30px 0;
 }
 
