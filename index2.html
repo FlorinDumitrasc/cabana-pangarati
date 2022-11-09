@@ -272,7 +272,7 @@
             >
           </p>
           <a href="https://www.instagram.com/openviewplace/" target="_blank"
-            ><img src="img/insta.png" alt=""
+            ><img src="img/insta.png" alt="Location"
           /></a>
         </div>
       </div>
@@ -306,11 +306,11 @@
           slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace("active", "");
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        // captionText.innerHTML = dots[slideIndex - 1].alt;
+        captionText.innerHTML = dots[slideIndex - 1].alt;
       }
     </script>
     <script>
